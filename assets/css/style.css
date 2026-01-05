@@ -1,0 +1,484 @@
+/* =========================================
+   1. VARIABLES & RESET
+   ========================================= */
+:root {
+  /* Color Palette - Medical & Professional */
+  --primary: #2E8BC0;       /* ฟ้าลึก (Deep Sky) */
+  --primary-hover: #24709c;
+  --secondary: #6FB3B8;     /* เขียวอมฟ้า (Teal/Sage) */
+  --accent-bg: #E0F2FE;     /* ฟ้าจางๆ สำหรับพื้นหลัง */
+  
+  --bg-body: #F7F9FB;       /* เทาอ่อนมาก (Off-white) */
+  --bg-card: #FFFFFF;
+  
+  --text-main: #334155;     /* เทาเข้ม (Slate 700) */
+  --text-muted: #64748B;    /* เทากลาง (Slate 500) */
+  --border: #E2E8F0;
+
+  /* Spacing & Layout */
+  --container-width: 1200px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Sarabun', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* =========================================
+   2. LAYOUT & HEADER
+   ========================================= */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav a {
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+nav a:hover { color: var(--primary); }
+
+main { flex: 1; }
+
+footer {
+  background: white;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* =========================================
+   3. HERO SECTION (New)
+   ========================================= */
+.hero-section {
+    padding: 5rem 0 4rem;
+    background: linear-gradient(to right, #F7F9FB, #FFFFFF);
+    overflow: hidden;
+}
+
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+/* Hero Text */
+.hero-text { flex: 1; max-width: 600px; }
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title span { color: var(--primary); }
+
+.hero-description {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+}
+
+/* Hero Buttons */
+.hero-actions { display: flex; gap: 1rem; margin-bottom: 3rem; }
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+    box-shadow: 0 4px 10px rgba(46, 139, 192, 0.3);
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--accent-bg);
+    transform: translateY(-2px);
+}
+
+/* Hero Features (Small Text) */
+.hero-features {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.feature-item { display: flex; align-items: center; gap: 0.75rem; }
+
+.feature-icon-small {
+    color: var(--secondary);
+    background: #ecfdf5;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.feature-text strong { display: block; font-size: 0.9rem; color: var(--text-main); }
+.feature-text span { font-size: 0.8rem; color: var(--text-muted); }
+
+/* Hero Image / Placeholder */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-placeholder-blob {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(135deg, #E0F2FE 0%, #dcfce7 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+/* =========================================
+   4. SERVICES GRID (Modern Clean UI)
+   ========================================= */
+.services-section {
+    padding: 2rem 0 5rem;
+    background-color: var(--bg-body);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p { color: var(--text-muted); font-size: 1rem; }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 0 10px;
+}
+
+.service-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--secondary);
+}
+
+.icon-box {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .icon-box {
+    transform: scale(1.1) rotate(-5deg);
+    background: var(--primary);
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+}
+
+.service-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; 
+}
+
+.card-link-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: auto;
+    transition: gap 0.2s ease;
+}
+
+.service-card:hover .card-link-text {
+    color: var(--secondary);
+    gap: 0.5rem;
+}
+
+/* =========================================
+   5. MARKDOWN CONTENT (Typography)
+   ========================================= */
+.markdown-body {
+  background: white;
+  padding: 4rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 900px;
+  margin: 3rem auto;
+}
+
+.markdown-body h1 { 
+    color: var(--primary); 
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem; 
+    border-bottom: 1px solid var(--border); 
+    padding-bottom: 1rem;
+}
+
+.markdown-body h2 { 
+    color: var(--secondary); 
+    font-size: 1.6rem;
+    margin-top: 2.5rem; 
+    margin-bottom: 1rem; 
+}
+
+.markdown-body h3 {
+    color: var(--text-main);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.markdown-body p { margin-bottom: 1.2rem; text-align: justify; color: #475569; }
+.markdown-body ul, .markdown-body ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: #475569;}
+.markdown-body li { margin-bottom: 0.5rem; }
+
+/* Code Blocks */
+.markdown-body code { 
+    background: #f1f5f9; 
+    padding: 0.2rem 0.4rem; 
+    border-radius: 4px; 
+    color: #0f172a; 
+    font-family: monospace;
+    font-size: 0.9em; 
+}
+
+.markdown-body pre { 
+    background: #1e293b; 
+    color: white; 
+    padding: 1.5rem; 
+    border-radius: 8px; 
+    overflow-x: auto; 
+    margin-bottom: 1.5rem; 
+}
+.markdown-body pre code { background: transparent; color: inherit; padding: 0; }
+
+/* Quotes */
+.markdown-body blockquote { 
+    border-left: 4px solid var(--secondary); 
+    background: #f8fafc; 
+    padding: 1rem 1.5rem; 
+    border-radius: 0 8px 8px 0; 
+    color: var(--text-muted); 
+    font-style: italic; 
+    margin-bottom: 1.5rem;
+}
+
+/* Tables (Important for Research) */
+.markdown-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+}
+
+.markdown-body th, .markdown-body td {
+    border: 1px solid var(--border);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.markdown-body th {
+    background-color: #f1f5f9;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.markdown-body tr:nth-child(even) { background-color: #fcfcfc; }
+
+/* Images in content */
+.markdown-body img { 
+    max-width: 100%; 
+    border-radius: 8px; 
+    margin: 1.5rem 0; 
+    box-shadow: var(--shadow-sm);
+}
+
+/* =========================================
+   6. RESPONSIVE
+   ========================================= */
+@media (max-width: 992px) {
+    .hero-content-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+        padding-top: 0;
+    }
+
+    .hero-text { max-width: 100%; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-actions { justify-content: center; }
+    .hero-features { justify-content: center; }
+    
+    .image-placeholder-blob {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container { padding: 0 15px; }
+    
+    .markdown-body { padding: 2rem 1.5rem; margin: 1rem auto; }
+    
+    .services-grid { grid-template-columns: 1fr; }
+    
+    .hero-title { font-size: 2rem; }
+}
+/* ... ต่อท้ายไฟล์เดิม ... */
+
+/* จัดการรูปภาพในเนื้อหา Markdown */
+.markdown-body img {
+    display: block;          /* ให้รูปอยู่บรรทัดใหม่ */
+    max-width: 100%;         /* ห้ามใหญ่เกินจอ (มือถือดูได้) */
+    height: auto;            /* รักษาอัตราส่วนรูป */
+    margin: 1.5rem auto;     /* จัดกึ่งกลาง และเว้นระยะบนล่าง */
+    border-radius: 8px;      /* มุมมนเล็กน้อย */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* เงาเบาๆ */
+}
+/* ...ต่อท้ายไฟล์เดิม... */
+
+/* กล่องใส่วิดีโอ YouTube ให้ยืดหยุ่นตามจอ */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* อัตราส่วน 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 8px;      /* มุมมน */
+    margin: 1.5rem 0;        /* เว้นระยะบนล่าง */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

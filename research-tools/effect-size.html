@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect Size Calculator - Oya.org</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <style>
+        /* CSS เฉพาะสำหรับหน้านี้ */
+        .calc-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+        .form-group input {
+            width: 100%; padding: 0.8rem; border: 1px solid var(--border);
+            border-radius: 6px; font-family: inherit; font-size: 1rem;
+        }
+        .result-box {
+            margin-top: 2rem; padding: 1.5rem; background: #ecfdf5;
+            border: 1px solid #6ee7b7; border-radius: 8px; display: none; /* ซ่อนไว้ก่อน */
+        }
+        .btn-calc {
+            width: 100%; background: var(--secondary); color: white;
+            border: none; padding: 1rem; border-radius: 6px; font-size: 1.1rem;
+            cursor: pointer; transition: background 0.3s;
+        }
+        .btn-calc:hover { background: #5da0a5; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo"><i data-lucide="arrow-left"></i> หน้าหลัก</a>
+            <span style="font-weight:600; color:var(--primary);">Effect Size Calculator</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <div style="text-align:center; margin: 2rem 0;">
+            <h1 style="color:var(--primary);">Cohen's d Calculator</h1>
+            <p style="color:var(--text-muted);">คำนวณขนาดอิทธิพลสำหรับการเปรียบเทียบค่าเฉลี่ย 2 กลุ่ม (Independent t-test)</p>
+        </div>
+
+        <div class="calc-card">
+            <h3 style="margin-bottom:1rem; border-bottom:1px solid #eee; padding-bottom:0.5rem;">กลุ่มทดลอง (Group 1)</h3>
+            <div class="form-group">
+                <label>ค่าเฉลี่ย (Mean 1)</label>
+                <input type="number" id="m1" placeholder="เช่น 85.5" step="0.01">
+            </div>
+            <div class="form-group">
+                <label>ส่วนเบี่ยงเบนมาตรฐาน (SD 1)</label>
+                <input type="number" id="sd1" placeholder="เช่น 12.4" step="0.01">
+            </div>
+            <div class="form-group">
+                <label>จำนวนคน (N 1)</label>
+                <input type="number" id="n1" placeholder="เช่น 30">
+            </div>
+
+            <h3 style="margin:2rem 0 1rem; border-bottom:1px solid #eee; padding-bottom:0.5rem;">กลุ่มควบคุม (Group 2)</h3>
+            <div class="form-group">
+                <label>ค่าเฉลี่ย (Mean 2)</label>
+                <input type="number" id="m2" placeholder="เช่น 78.2" step="0.01">
+            </div>
+            <div class="form-group">
+                <label>ส่วนเบี่ยงเบนมาตรฐาน (SD 2)</label>
+                <input type="number" id="sd2" placeholder="เช่น 14.1" step="0.01">
+            </div>
+            <div class="form-group">
+                <label>จำนวนคน (N 2)</label>
+                <input type="number" id="n2" placeholder="เช่น 30">
+            </div>
+
+            <button class="btn-calc" onclick="calculateEffectSize()">คำนวณ Effect Size</button>
+
+            <div id="result" class="result-box">
+                <h3 style="color:#065f46; margin-bottom:0.5rem;">ผลการคำนวณ</h3>
+                <p style="font-size:1.5rem; font-weight:bold; color:#047857;" id="d-value">Cohen's d = 0.00</p>
+                <p id="interpretation" style="margin-top:0.5rem; color:#064e3b;">การแปลผล: -</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Witsanukorn Oya.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+    <script>
+        // Logic การคำนวณ Cohen's d
+        function calculateEffectSize() {
+            // ดึงค่า
+            const m1 = parseFloat(document.getElementById('m1').value);
+            const sd1 = parseFloat(document.getElementById('sd1').value);
+            const n1 = parseFloat(document.getElementById('n1').value);
+            
+            const m2 = parseFloat(document.getElementById('m2').value);
+            const sd2 = parseFloat(document.getElementById('sd2').value);
+            const n2 = parseFloat(document.getElementById('n2').value);
+
+            // เช็คว่ากรอกครบไหม
+            if (isNaN(m1) || isNaN(sd1) || isNaN(n1) || isNaN(m2) || isNaN(sd2) || isNaN(n2)) {
+                alert("กรุณากรอกข้อมูลให้ครบถ้วนทุกช่องครับ");
+                return;
+            }
+
+            // สูตร Pooled SD
+            // SDpooled = sqrt [ ((n1-1)*sd1^2 + (n2-1)*sd2^2) / (n1+n2-2) ]
+            const variance1 = Math.pow(sd1, 2);
+            const variance2 = Math.pow(sd2, 2);
+            const pooledSD = Math.sqrt( (((n1 - 1) * variance1) + ((n2 - 1) * variance2)) / (n1 + n2 - 2) );
+
+            // สูตร Cohen's d = (Mean1 - Mean2) / PooledSD
+            const d = (m1 - m2) / pooledSD;
+
+            // แปลผล
+            let interpret = "";
+            const absD = Math.abs(d);
+            if (absD < 0.2) interpret = "ขนาดอิทธิพลน้อยมาก (Negligible)";
+            else if (absD < 0.5) interpret = "ขนาดอิทธิพลเล็ก (Small)";
+            else if (absD < 0.8) interpret = "ขนาดอิทธิพลปานกลาง (Medium)";
+            else interpret = "ขนาดอิทธิพลใหญ่ (Large)";
+
+            // แสดงผล
+            document.getElementById('d-value').innerText = `Cohen's d = ${d.toFixed(3)}`;
+            document.getElementById('interpretation').innerText = `การแปลผล: ${interpret}`;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
