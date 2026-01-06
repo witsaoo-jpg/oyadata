@@ -77,7 +77,7 @@ Oncology Knowledge Base มีบทบาทสำคัญในการส�
 * การให้ยาเคมีบำบัดอย่างปลอดภัย
 
 <h4 style="margin-top: 30px; text-align: right;">
-    <a href="cancertreatment.html" style="color: #e11d48; font-weight: bold; text-decoration: none;">
+    <a href="chemotherapy.html" style="color: #e11d48; font-weight: bold; text-decoration: none;">
         Click เพื่ออ่านต่อ 👉
     </a>
 </h4>
