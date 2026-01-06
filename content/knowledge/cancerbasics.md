@@ -196,4 +196,6 @@ Siegel, R. L., Miller, K. D., & Jemal, A. (2020). Cancer statistics, 2020. *CA: 
 Vogelstein, B., & Kinzler, K. W. (2015). The path to cancer—Three strikes and you're out. *New England Journal of Medicine, 373*(20), 1895-1898. https://doi.org/10.1056/NEJMp1508811
 
 Weinberg, R. A. (2014). *The biology of cancer* (2nd ed.). Garland Science.
-เรียบเรียง นายวิษณุกรณ์ โอยา พยาบาลวิชาชีพชำนาญการ 6 มกราคม 2569
+
+<span style="color: green;">เรียบเรียง นายวิษณุกรณ์ โอยา พยาบาลวิชาชีพชำนาญการ 6 มกราคม 2569 </span>
+
