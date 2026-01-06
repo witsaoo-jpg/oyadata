@@ -138,7 +138,7 @@ Oncology Knowledge Base มีบทบาทสำคัญในการส�
 * Infection Control ในผู้ป่วยเคมีบำบัด
 * Patient Safety
 
----<h4 style="margin-top: 30px; text-align: right;">
+<h4 style="margin-top: 30px; text-align: right;">
     <a href="cancerclinicalguidelines.html" style="color: #e11d48; font-weight: bold; text-decoration: none;">
         Click เพื่ออ่านต่อ 👉
     </a>
@@ -156,7 +156,13 @@ Oncology Knowledge Base มีบทบาทสำคัญในการส�
 * ตัวอย่างงานวิจัย
 * เอกสารและแบบสอบถามสำหรับการวิจัย
 
----
+<h4 style="margin-top: 30px; text-align: right;">
+    <a href="cancerebp.html" style="color: #e11d48; font-weight: bold; text-decoration: none;">
+        Click เพื่ออ่านต่อ 👉
+    </a>
+</h4>
+
+---  
 
 ## Education & Learning Resources
 
