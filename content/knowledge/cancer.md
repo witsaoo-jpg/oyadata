@@ -164,9 +164,10 @@ Oncology Knowledge Base มีบทบาทสำคัญในการส�
 </h4>
 
 ---  
+Glossary ศัพท์ทางมะเร็ง
 <h4 style="margin-top: 30px; text-align: left;">
     <a href="cancerglossary.html" style="color: #e11d48; font-weight: bold; text-decoration: none;">
-        Glossary ศัพท์ทางมะเร็ง 👉
+        click to Glossary ศัพท์ทางมะเร็ง 👉
     </a>
 </h4>
 
