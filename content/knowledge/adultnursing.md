@@ -113,6 +113,6 @@ Ferrell, B. R., Paice, J. A., & Koczywas, M. (2018). New standards and implicati
 Puts, M. T. E., Papoutsis, A., Springall, E., & Tourangeau, A. E. (2020). A systematic review of unmet needs of newly diagnosed older cancer patients undergoing active cancer treatment. *Supportive Care in Cancer, 28*(5), 2077-2097. https://doi.org/10.1007/s00520-019-05261-7
 
 Wildiers, H., Heeren, P., Puts, M., Topinkova, E., Janssen-Heijnen, M. L., Extermann, M., ... & Hurria, A. (2021). International Society of Geriatric Oncology consensus on geriatric assessment in older patients with cancer. *Journal of Clinical Oncology, 39*(22), 2321-2333. https://doi.org/10.1200/JCO.20.02733
-
+---
 
 เรียบเรียง นายวิษณุกรณ์ โอยา พยาบาลวิชาชีพชำนาญการ 6 มกราคม 2569 
