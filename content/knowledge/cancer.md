@@ -139,7 +139,7 @@ Oncology Knowledge Base มีบทบาทสำคัญในการส�
 * Patient Safety
 
 ---<h4 style="margin-top: 30px; text-align: right;">
-    <a href="oncologynursing.html" style="color: #e11d48; font-weight: bold; text-decoration: none;">
+    <a href="cancerclinicalguidelines.html" style="color: #e11d48; font-weight: bold; text-decoration: none;">
         Click เพื่ออ่านต่อ 👉
     </a>
 </h4>
