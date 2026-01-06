@@ -115,4 +115,4 @@ Puts, M. T. E., Papoutsis, A., Springall, E., & Tourangeau, A. E. (2020). A syst
 Wildiers, H., Heeren, P., Puts, M., Topinkova, E., Janssen-Heijnen, M. L., Extermann, M., ... & Hurria, A. (2021). International Society of Geriatric Oncology consensus on geriatric assessment in older patients with cancer. *Journal of Clinical Oncology, 39*(22), 2321-2333. https://doi.org/10.1200/JCO.20.02733
 
 
-
+เรียบเรียง นายวิษณุกรณ์ โอยา พยาบาลวิชาชีพชำนาญการ 6 มกราคม 2569 
