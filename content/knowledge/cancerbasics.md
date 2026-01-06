@@ -197,5 +197,6 @@ Vogelstein, B., & Kinzler, K. W. (2015). The path to cancer—Three strikes and 
 
 Weinberg, R. A. (2014). *The biology of cancer* (2nd ed.). Garland Science.
 
-<span style="color: green;">เรียบเรียง นายวิษณุกรณ์ โอยา พยาบาลวิชาชีพชำนาญการ 6 มกราคม 2569 </span>
+
+<span style="color: #16a34a;">เรียบเรียง นายวิษณุกรณ์ โอยา พยาบาลวิชาชีพชำนาญการ 6 มกราคม 2569 </span>
 
