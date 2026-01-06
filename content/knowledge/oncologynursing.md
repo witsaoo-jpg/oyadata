@@ -131,3 +131,4 @@ Polovich, M., & Olsen, M. (Eds.). (2018). *Chemotherapy and immunotherapy guidel
 Schulmeister, L. (2019). Safe management of chemotherapy: A review of the literature. *Clinical Journal of Oncology Nursing, 23*(6), 647-654. https://doi.org/10.1188/19.CJON.647-654
 
 
+เรียบเรียงโดย: พว.วิษณุกรณ์ โอยา : 6 มกราคม 2569
