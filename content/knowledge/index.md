@@ -10,7 +10,7 @@
 ## 👩‍⚕️ 2. Nursing & Clinical Knowledge
 **องค์ความรู้ทางการพยาบาล**
 * การพยาบาลผู้ใหญ่และผู้สูงอายุ
-* **[🎗️ Oncology Nursing (Cancer Basics, chemotherapy)](cancer.html)** *(ลิงก์ไปหน้ามะเร็งที่คุณทำไว้)*
+* **[🎗️ Oncology Nursing (Cancer Basics, chemotherapy)](cancer.html)** *(click เพื่ออ่านต่อ)*
 * Patient Safety & Quality of Care
 * Clinical Pathway & Nursing Protocol
 * Focus Charting / Nursing Documentation
