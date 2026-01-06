@@ -181,3 +181,4 @@ Schulmeister, L. (2019). Safe management of chemotherapy: A review of the litera
 Vogel, W. H. (2021). Hypersensitivity reactions to chemotherapy: Overview and management. *Journal of the Advanced Practitioner in Oncology, 12*(2), 181-192. https://doi.org/10.6004/jadpro.2021.12.2.5
 
 
+เรียบเรียงโดย: พว.วิษณุกรณ์ โอยา : 6 มกราคม 2569
