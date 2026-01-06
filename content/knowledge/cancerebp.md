@@ -169,4 +169,4 @@ Slamon, D. J., Neven, P., Chia, S., Fasching, P. A., De Laurentiis, M., Im, S. A
 
 World Medical Association. (2013). World Medical Association Declaration of Helsinki: Ethical principles for medical research involving human subjects. *JAMA, 310*(20), 2191-2194. https://doi.org/10.1001/jama.2013.281053
 
-
+เรียบเรียงโดย: พว.วิษณุกรณ์ โอยา : 6 มกราคม 2569
