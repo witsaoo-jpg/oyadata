@@ -30,11 +30,11 @@ Oncology Knowledge Base มีบทบาทสำคัญในการส�
 * การวินิจฉัยโรคมะเร็ง
 * การพยากรณ์โรค
 
-<h3 style="margin-top: 30px;">
+<h4 style="margin-top: 30px; text-align: right;">
     <a href="cancerbasics.html" style="color: #e11d48; font-weight: bold; text-decoration: none;">
-        Click เพื่ออ่านต่อ
+        Click เพื่ออ่านต่อ 👉
     </a>
-</h3>
+</h4>
          
 ---
 
