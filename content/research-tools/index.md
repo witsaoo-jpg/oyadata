@@ -79,3 +79,5 @@
 - **Statistical Power**
 - **R-squared / Adjusted R-squared**
 - **Goodness-of-fit Indices** (เช่น CFI, TLI, RMSEA – ใช้ใน SEM/CFA)
+
+เรียบเรียงโดย: พว.วิษณุกรณ์ โอยา : 7 มกราคม 2569
