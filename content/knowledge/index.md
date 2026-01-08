@@ -9,7 +9,9 @@
 
 ## 👩‍⚕️ 2. Nursing & Clinical Knowledge
 **องค์ความรู้ทางการพยาบาล**
-* การพยาบาลผู้ใหญ่และผู้สูงอายุ <a href="adultnursing.html" style="background-color: #0ea5e9; color: white; padding: 2px 8px; border-radius: 4px; text-decoration: none; font-size: 0.8em;">อ่านต่อ ➜</a>
+* ทฤษฎีและแนวคิดทางการพยาบาล: วิวัฒนาการและการประยุกต์ใช้ <a href="adultnursing.html" style="background-color: #0ea5e9; color: white; padding: 2px 8px; border-radius: 4px; text-decoration: none; font-size: 0.8em;">อ่านต่อ ➜</a>
+* กระบวนการพยาบาล (Nursing Process)
+* การพยาบาลผู้ใหญ่และผู้สูงอายุในโรงมะเร็ง และประวัติความเป็นมา <a href="adultnursing.html" style="background-color: #0ea5e9; color: white; padding: 2px 8px; border-radius: 4px; text-decoration: none; font-size: 0.8em;">อ่านต่อ ➜</a>
 * Oncology Nursing (Cancer Basics, chemotherapy) <a href="cancer.html" style="background-color: #0ea5e9; color: white; padding: 2px 8px; border-radius: 4px; text-decoration: none; font-size: 0.8em;">อ่านต่อ ➜</a>
 * Patient Safety & Quality of Care
 * Clinical Pathway & Nursing Protocol
