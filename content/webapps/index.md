@@ -21,7 +21,7 @@
 
 ---
 
-### 3. Research Effect Size Calculator
+### 3. Research Statistics Tool
 โปรแกรมคำนวณสถิติวิจัยทางการพยาบาลและสาธารณสุข 
 * **สถานะ:** ✅ กำลังพัฒนา(01/2026)
 <a href="https://witsaoo-jpg.github.io/cical/" target="_blank" 
