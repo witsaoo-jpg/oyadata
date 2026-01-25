@@ -24,7 +24,7 @@
 ### 3. Research Statistics Tool
 โปรแกรมคำนวณสถิติวิจัยทางการพยาบาลและสาธารณสุข 
 * **สถานะ:** ✅ กำลังพัฒนา(01/2026)
-<a href="https://witsaoo-jpg.github.io/cical/" target="_blank" 
+* <a href="https://witsaoo-jpg.github.io/cical/" target="_blank" 
    style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
    🚀 เปิดใช้งานโปรแกรมคำนวณสถิติวิจัย
 </a>
