@@ -20,8 +20,15 @@
 </a>
 
 ---
-
-### 3. Research Statistics Tool
+### 3. ระบบแจ้งเตือนการให้ยา Fentanyl Patch
+(High Alert Medication)
+* **สถานะ:** ✅ กำลังพัฒนา(01/2026)
+* <a href="https://witsaoo-jpg.github.io/fenta/" target="_blank" 
+   style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
+   🚀 เปิดใช้งานโปรแกรม Fentanyl Patch
+</a>
+---
+### 4. Research Statistics Tool
 โปรแกรมคำนวณสถิติวิจัยทางการพยาบาลและสาธารณสุข 
 * **สถานะ:** ✅ กำลังพัฒนา(01/2026)
 * <a href="https://witsaoo-jpg.github.io/cical/" target="_blank" 
