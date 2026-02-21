@@ -2,6 +2,7 @@
 
 ### 1. Nursing Workforce Calculator (NWFC)
 ระบบคำนวณอัตรากำลังพยาบาลตามภาระงานจริง ช่วยในการบริหารจัดการเวรและจัดตารางปฏิบัติงาน
+* ผลงานลิขสิทธิ์ กรมทรัพย์สินทางปัญญา ผ่านเมื่อวันที่ิ 20 กุมภาพันธ์ 2569
 * **สถานะ:** ✅ ใช้งานได้จริง (Version 1.0)
 * **เทคโนโลยี:** JavaScript, LocalStorage
 <a href="https://witsaoo-jpg.github.io/nwfc/" target="_blank" 
