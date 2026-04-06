@@ -23,7 +23,7 @@
 ---
 ### 3. ระบบแจ้งเตือนการให้ยา Fentanyl Patch
 (High Alert Medication)
-* ผลงานลิขสิทธิ์ทะเบียนเลขที่ .... กรมทรัพย์สินทางปัญญา 
+* ผลงานลิขสิทธิ์ทะเบียนเลขที่ ว1.000174 กรมทรัพย์สินทางปัญญา 
 * <a href="https://witsaoo-jpg.github.io/fenta/" target="_blank" 
    style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
    🚀 เปิดใช้งานโปรแกรม Fentanyl Patch
@@ -33,6 +33,7 @@
 ### 4. 🏥 AED Map Thailand - Public Safety Platform
 * ระบบแผนที่ระบุตำแหน่งเครื่องกระตุกหัวใจไฟฟ้าอัตโนมัติ (AED) ทั่วประเทศไทย เพื่อช่วยเหลือประชาชนและหน่วยงานกู้ชีพในการเข้าถึงอุปกรณ์ช่วยชีวิตได้ทันท่วงที
 * ท่านสามารถ login เพื่อปักหมุด เครื่อง AED จะเป็นประโยชน์ต่อสาธารณชน
+* ผลงานลิขสิทธิ์ทะเบียนเลขที่ ว1.000193 กรมทรัพย์สินทางปัญญา
 * **สถานะ:** ✅ ใช้งานได้
 * <a href="https://witsaoo-jpg.github.io/aed/" target="_blank" 
    style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
@@ -42,7 +43,7 @@
 ---
 ### 5. เครื่องคำนวณยาและสารน้ำทางการพยาบาล
 เครื่องมือช่วยคำนวณสำหรับพยาบาลเพื่อความปลอดภัยของผู้ป่วย
-* **สถานะ:** ✅ ใช้งานได้
+* **สถานะ:** ✅ ใช้งานได้+กำลังพัฒนาเพิ่มเติม
 * <a href="https://witsaoo-jpg.github.io/nursecal//" target="_blank" 
    style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
    🚀 เปิดใช้งานโปรแกรมครื่องคำนวณยาและสารน้ำทางการพยาบาล
@@ -50,12 +51,12 @@
 ---
 
 ---
-### 5. Research Statistics Tool
-โปรแกรมคำนวณสถิติวิจัยทางการพยาบาลและสาธารณสุข 
-* **สถานะ:** ✅ กำลังพัฒนา(01/2026)
-* <a href="https://witsaoo-jpg.github.io/cical/" target="_blank" 
+### 5. QR Code Generator (ไม่มีโฆษณาคั่น)
+โปรแกรมสร้าง QR Code ไม่มีโฆษณาคั่น
+* **สถานะ:** ✅ ใช้งานได้
+* <a href="https://witsaoo-jpg.github.io/qrcode/" target="_blank" 
    style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
-   🚀 เปิดใช้งานโปรแกรมคำนวณสถิติวิจัย
+   🚀 เปิดใช้งานโปรแกรมQR Code
 </a>
 ---
 
