@@ -58,6 +58,7 @@
    style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
    🚀 เปิดใช้งานโปรแกรมQR Code
 </a>
+
 ---
 ### 6.โปรแกรมจัดเวรพยาบาลอัจฉริยะ 
 เป็นระบบ local storage ที่จะบันทึกลงคอมพิวเตอร์ส่วนตัวเมื่อสร้างตารางเวรแล้วให้ Export เป็น excel
