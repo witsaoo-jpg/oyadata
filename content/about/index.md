@@ -7,6 +7,7 @@
 **ชื่อ-สกุล:** นายวิษณุกรณ์ โอยา (Witsanukorn Oya)  
 **ชื่อเล่น:** ที (Tee)  
 **ตำแหน่ง:** พยาบาลวิชาชีพชำนาญการ (Registered Nurse, Specialist Level)  
+**witsaoo@gmail.com
 
 ---
 
@@ -19,14 +20,10 @@
 
 ### 🏥 Professional Skills
 * การพยาบาลผู้ป่วยวิกฤตและผู้ป่วยมะเร็ง (Oncology Care)
-* เภสัชวิทยาและการบริหารยาเคมีบำบัด
-* การจัดการความปวด (Pain Management)
+
 
 ### 💻 Technical Skills
 * **Web Development:** HTML, CSS, JavaScript
-* **Application:** Nursing Workforce Calculation System (NWFC)
-* **Database:** Firebase
-* **DIY Electronics:** Solar Power & Battery Systems
 
 ---
 
@@ -38,4 +35,4 @@
 > "Technology is best when it brings people together and heals them."
 
 ---
-*ติดต่อ: [ใส่อีเมลของคุณที่นี่]*
+*ติดต่อ: [witsaoo@gmail.com]*
