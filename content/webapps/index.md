@@ -59,6 +59,14 @@
    🚀 เปิดใช้งานโปรแกรมQR Code
 </a>
 ---
+### 6.โปรแกรมจัดเวรพยาบาลอัจฉริยะ 
+เป็นระบบ local storage ที่จะบันทึกลงคอมพิวเตอร์ส่วนตัวเมื่อสร้างตารางเวรแล้วให้ Export เป็น excel
+* **สถานะ:** ✅ ใช้งานได้ (11 เมษายน 2569)
+* <a href="https://witsaoo-jpg.github.io/hnss/" target="_blank" 
+   style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
+   🚀 เปิดใช้งานโปรแกรมจัดเวรพยาบาลอัจฉริยะ 
+</a>
+---
 
 
 
