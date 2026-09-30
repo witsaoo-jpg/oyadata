@@ -71,3 +71,13 @@
 
 
 
+
+---
+### 7. 🌧️ Rain Radar Thailand
+เว็บแอปติดตามเรดาร์ฝน พยากรณ์อากาศใกล้ตัว และวิเคราะห์แนวโน้มฝนจากหลายแบบจำลอง พร้อมเกณฑ์ปริมาณฝนและระบบ Forecast Verification
+* **สถานะ:** ✅ ใช้งานได้ (v1.16)
+* **แหล่งข้อมูล:** TMD / Open-Meteo / original data providers
+* <a href="/rain-radar-thailand/" target="_blank"
+   style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
+   🌧️ เปิดใช้งาน Rain Radar Thailand
+</a>
