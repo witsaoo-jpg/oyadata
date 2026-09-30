@@ -1,0 +1,353 @@
+/* Scoped Phase 1.2 additions: preserve the Phase 1.1 dashboard. */
+.gps-card .gps-privacy{font-size:10px;line-height:1.7;color:#8bafbe;margin:10px 0}
+.gps-card .gps-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.gps-card .gps-secondary{padding:9px 12px;background:transparent;border:1px solid #355a6b;border-radius:7px;color:#a5dfd5;font-size:11px;cursor:pointer}
+.gps-card .gps-secondary:hover{background:#1a3e4c}
+.gps-card .gps-button:disabled{opacity:.65;cursor:wait}
+.gps-card .gps-details{margin-top:14px;padding:12px;border:1px solid #2c5361;background:#0b2738;border-radius:8px}
+.gps-card .gps-line{display:flex;justify-content:space-between;gap:12px;font-size:10px;padding:5px 0;color:#9bbac8}
+.gps-card .gps-line strong{color:#d2ede8;font-weight:650;text-align:right;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.gps-card .gps-map-wrap{margin-top:12px}
+.gps-card .gps-map-wrap iframe{display:block;width:100%;height:220px;border:1px solid #39606b;border-radius:7px;background:#112d40}
+.gps-card .gps-disclaimer{font-size:10px;color:#a3bac5;line-height:1.7;margin:9px 0 0}
+.gps-card .gps-link{margin-top:12px}
+.gps-card [hidden]{display:none!important}
+
+/* Footer credit and optional external visitor counter */
+.site-footer{align-items:flex-start;flex-wrap:wrap}
+.site-footer .footer-meta{display:flex;flex-direction:column;align-items:flex-end;gap:9px;max-width:100%;text-align:right}
+.site-footer .footer-credit{font-size:11px;color:#a9d9d1;letter-spacing:.1px}
+.site-footer .footer-credit strong{color:#7fe6ca}
+.site-footer .footer-site-link{font-size:11px;color:#79e6c8;font-weight:700;letter-spacing:.1px;border-bottom:1px solid #2f756a;padding-bottom:2px}
+.site-footer .footer-site-link:hover{text-decoration:none;color:#b9fff0;border-bottom-color:#79e6c8}
+.site-footer .footer-counter{display:flex;flex-direction:column;align-items:flex-end;gap:5px;font-size:10px;letter-spacing:0;color:#8daaba}
+.site-footer .footer-counter a{display:inline-flex;max-width:100%}
+.site-footer .footer-counter img{display:block;max-width:100%;height:auto;border:0}
+.site-footer .footer-counter small{font-size:9px;line-height:1.6;color:#7896a6;max-width:270px}
+@media(max-width:740px){.site-footer .footer-meta,.site-footer .footer-counter{align-items:flex-start;text-align:left}}
+
+/* Phase 1.3 — keep existing layout responsive. */
+.history-player{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:15px}
+.history-player button{padding:9px 13px;background:#164b48;border:1px solid #347b6a;border-radius:7px;color:#c4f8e5;font-size:11px;cursor:pointer}
+.history-player button:disabled{opacity:.5;cursor:not-allowed}
+.history-player input{accent-color:#76e9cc;flex:1;min-width:100px}
+.history-player span,.history-caution{font-size:10px;color:#98b6c5;line-height:1.7}
+.history-caution{margin:10px 0 0}
+.alerts-card,.pwa-card{background:#102b37}
+.alerts-card p,.pwa-card p{font-size:11px;line-height:1.8;color:#98b6c5;margin:12px 0}
+.alerts-card a{color:#76e9cc;font-size:11px;font-weight:700}
+.alerts-card .warning-caution{font-size:10px;color:#d7c096}
+
+/* 1.4: model-based local forecast, visually separate from TMD observations. */
+.local-forecast-card,.radar-location-card{background:#102b37}
+.local-forecast-card p,.radar-location-card p{color:#98b6c5;font-size:11px;line-height:1.75;margin:12px 0}
+.local-forecast-card .forecast-privacy{color:#85a6b7;font-size:10px}
+.local-forecast-card .forecast-privacy a{color:#80e8d0}
+.local-forecast-card [hidden]{display:none!important}
+.forecast-overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:13px}
+.forecast-overview>div{border:1px solid #31586a;background:#0b2638;border-radius:8px;padding:11px}
+.forecast-overview small{display:block;line-height:1.55;font-size:9px;color:#9fbdc8}
+.forecast-overview strong{display:block;font-size:21px;color:#76e9cc;margin-top:7px}
+.local-forecast-card .forecast-advice{border-left:3px solid #72d8ba;padding:8px 10px;background:#103940;color:#d7e9df;font-size:11px}
+.forecast-hours{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.forecast-hour{padding:8px 6px;border-radius:7px;border:1px solid #315165;background:#0a2535;display:flex;flex-direction:column;gap:5px;font-size:9px;color:#a1c1cc}
+.forecast-hour strong{color:#d7f0ea;font-size:10px}
+@media(max-width:390px){.forecast-hours{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Location-aware weather summary above the radar. No unsolicited GPS or API calls. */
+.weather-banner{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 0 19px;padding:18px 20px;border:1px solid #35695f;border-radius:12px;background:linear-gradient(115deg,#123c40 0%,#112b3b 65%,#102637 100%);color:#dff8f0}
+.weather-banner-main{display:flex;align-items:center;gap:15px;min-width:0}
+.weather-banner-symbol{display:grid;place-items:center;width:47px;height:47px;flex-shrink:0;border:1px solid #418d78;border-radius:12px;background:#1b514b;color:#8df3d6;font-size:28px}
+.weather-banner-copy{min-width:0}
+.weather-banner-kicker{display:block;color:#84dcca;font-size:9px;font-weight:750;letter-spacing:1.3px;margin-bottom:5px}
+.weather-banner h2{font-size:17px;font-weight:760;line-height:1.35;margin:0 0 5px;color:#ecfff6}
+.weather-banner p{font-size:12px;line-height:1.65;margin:0;color:#c5e5df}
+.weather-banner small{display:block;font-size:10px;color:#93b7bf;margin-top:7px;line-height:1.55}
+.weather-banner-action{flex-shrink:0;background:#1d6253;border:1px solid #439780;border-radius:8px;color:#e2fff5;padding:11px 14px;font-size:11px;font-weight:700;cursor:pointer}
+.weather-banner-action:hover{background:#28735f}
+@media(max-width:740px){.weather-banner{display:block;padding:14px;margin-bottom:13px}.weather-banner-main{align-items:flex-start;gap:11px}.weather-banner-symbol{width:36px;height:36px;font-size:22px}.weather-banner h2{font-size:15px}.weather-banner p{font-size:11px}.weather-banner-action{margin:12px 0 0 47px;padding:9px 12px}}
+
+/* Phase 1.6 favorite places, scoped to preserve existing dashboard. */
+.places-card{background:#102b37}
+.places-note,.places-list>p{font-size:10px;line-height:1.7;color:#96b4c1;margin:10px 0}
+.places-list-head{display:flex;justify-content:space-between;font-size:11px;color:#d3ebe5;font-weight:650}
+.places-list{display:grid;gap:8px;margin:10px 0}
+.place-item{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:8px;border:1px solid #345767;border-radius:7px;background:#0b2638}
+.place-item span{flex:1;min-width:100px;overflow-wrap:anywhere;color:#b4d0dc;font-size:10px}
+.place-item button,.places-card .places-form button,.places-card #places-clear-all{cursor:pointer;border-radius:6px;padding:7px 9px;font-size:10px;color:#bff0e3;background:#165148;border:1px solid #347b6a}
+.place-item .place-delete{background:transparent;color:#ebc1bc;border-color:#7d5558}
+.places-form{display:grid;gap:8px;margin-top:13px}
+.places-form label{display:grid;gap:5px;color:#a9cbd5;font-size:10px}
+.places-form input{min-width:0;width:100%;box-sizing:border-box;padding:9px;border-radius:7px;border:1px solid #395b6c;color:#e2f8f2;background:#0b2638;font:inherit}
+.places-form input::placeholder{color:#6c8998}
+.places-coords{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.places-card #places-clear-all{background:transparent;color:#e4c7b9;border-color:#7a6663}
+
+/* Opt-in public forecast advisories and interactive location map. */
+.public-advisory{margin:0 0 18px;padding:17px 20px;border:1px solid #4c837a;border-radius:12px;background:linear-gradient(110deg,#113d41,#122b3b);color:#ddf5ed}
+.public-advisory .advisory-title{font-size:10px;letter-spacing:1px;color:#80e6c9;font-weight:750;margin-bottom:7px}
+.public-advisory h2{font-size:17px;margin:0 0 6px;color:#e9fff7}
+.public-advisory p{font-size:12px;line-height:1.6;margin:0 0 6px}
+.public-advisory small{font-size:10px;line-height:1.6;color:#9dc5c5}
+.public-advisory .advisory-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.public-advisory button,.selected-map-card button{padding:9px 11px;border:1px solid #408b78;border-radius:7px;background:#1b6354;color:#e4fff3;font-size:11px;cursor:pointer}
+.public-advisory #notify-disable{background:transparent}
+.public-advisory .advisory-actions span{font-size:10px;color:#abc9c9}
+.selected-map-card{background:#102b37}
+.selected-map-card p{font-size:10px;line-height:1.7;color:#a1bac8}
+.selected-map-card iframe{display:block;width:100%;height:230px;border:1px solid #456675;border-radius:7px;margin:10px 0}
+.selected-map-card button:disabled{opacity:.55;cursor:not-allowed}
+.selected-map-card [hidden],.public-advisory [hidden]{display:none!important}
+@media(max-width:740px){.public-advisory{padding:13px}.public-advisory h2{font-size:15px}}
+
+/* Weather Intelligence — model observations are visibly distinct from TMD radar. */
+.weather-intel{margin:0 0 18px;padding:19px;border:1px solid #396c73;border-radius:12px;background:linear-gradient(135deg,#12343d,#102c3e);color:#e6f8f3}
+.intel-top{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.intel-kicker{font-size:10px;color:#87e4d0;letter-spacing:1px;font-weight:750}
+.weather-intel h2{font-size:18px;margin:7px 0;color:#effffa}
+.weather-intel p{margin:5px 0 0;font-size:12px;line-height:1.7;color:#bdd7dd}
+.intel-source-tag{border:1px solid #46796e;border-radius:20px;padding:7px 10px;font-size:10px;color:#a4decf}
+.intel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:16px}
+.intel-grid>div{background:#0b2738;border:1px solid #30576a;border-radius:8px;padding:12px;min-width:0}
+.intel-grid small{display:block;font-size:10px;color:#91bec7;margin-bottom:9px}
+.intel-grid strong{display:block;font-size:13px;line-height:1.55;font-weight:650;overflow-wrap:anywhere}
+.weather-intel .intel-model-time{font-size:10px;color:#98b9c5;margin-top:11px}
+.intel-radar-box{border-top:1px solid #45616d;margin-top:13px;padding-top:12px}
+.intel-radar-box>span{font-size:11px;color:#85e3ce;font-weight:700}
+.intel-radar-box p{font-size:11px;margin:5px 0}
+.intel-radar-box small{display:block;color:#94b1c0;font-size:10px;line-height:1.6;margin-top:4px}
+@media(max-width:900px){.intel-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:500px){.weather-intel{padding:13px}.weather-intel h2{font-size:15px}.intel-grid{grid-template-columns:1fr}}
+
+/* Phase 1.9: make first-step action accessible without hunting lower down. */
+.weather-banner-controls{display:flex;flex-direction:column;align-items:flex-end;gap:9px;flex-shrink:0}
+.weather-banner .weather-banner-action:disabled{opacity:.7;cursor:wait}
+.weather-hourly-link{font-size:10px;color:#9eead6;text-decoration:underline;text-underline-offset:3px}
+.weather-intel #intel-grid[hidden],.weather-banner-controls [hidden]{display:none!important}
+@media(max-width:740px){.weather-banner-controls{align-items:flex-start;margin:13px 0 0 47px}.weather-banner-controls .weather-banner-action{margin:0;white-space:normal;text-align:left}}
+
+/* Phase 1.9.1 — comfortable single-action control, including on phones. */
+.easy-refresh{display:flex;align-items:center;gap:15px;margin:0 0 18px;padding:16px 18px;background:#173b3c;border:1px solid #478678;border-radius:12px}
+.easy-refresh button{font:inherit;font-size:17px;line-height:1.5;font-weight:750;min-height:58px;min-width:250px;padding:12px 20px;color:#ecfff7;background:#23775f;border:2px solid #59ac8b;border-radius:10px;cursor:pointer}
+.easy-refresh button:focus-visible{outline:3px solid #e4fff1;outline-offset:3px}
+.easy-refresh button:disabled{opacity:.7;cursor:wait}
+.easy-refresh-copy{display:flex;flex-direction:column;gap:5px;min-width:0}
+.easy-refresh-copy strong{font-size:13px;color:#d8f9ec}
+.easy-refresh-copy span{font-size:11px;color:#a5c8c9;line-height:1.65}
+.easy-refresh #easy-refresh-status{color:#8de1cd}
+@media(max-width:740px){.easy-refresh{flex-direction:column;align-items:stretch;padding:12px}.easy-refresh button{min-width:0;width:100%;min-height:60px;font-size:16px}}
+
+/* Phase 1.10: information first, large legible type and touch targets. */
+.public-overview{border:1px solid #479183;background:linear-gradient(115deg,#173d43,#123043);padding:24px;border-radius:16px;margin:0 0 17px;color:#edfff8}
+.public-overview-top{display:flex;align-items:start;justify-content:space-between;gap:16px}
+.public-overview-kicker{font-size:14px;color:#93e8d5;font-weight:700}
+.public-overview h2{font-size:clamp(25px,3.2vw,37px);line-height:1.35;color:#f2fff8;margin:12px 0;font-weight:800}
+.public-overview p{font-size:18px;line-height:1.7;color:#c9e4e0;margin:0}
+.public-overview button{font:inherit;flex-shrink:0;border:2px solid #58b999;background:#216954;border-radius:10px;color:#eefff5;min-height:55px;padding:11px 17px;font-size:16px;font-weight:700}
+.public-overview button:disabled{opacity:.65}
+.public-overview .public-weather-meta{font-size:13px;line-height:1.65;color:#a8cecb;margin-top:13px}
+.public-weather-cities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:19px}
+.public-city{display:flex;flex-direction:column;gap:6px;min-width:0;padding:16px;border:1px solid #396c72;border-radius:10px;background:#102b3c}
+.public-city strong{font-size:22px;line-height:1.4;color:#f0fff6}
+.public-city small{font-size:13px;color:#9fc2cc}
+.public-city-condition{font-size:17px;line-height:1.55;color:#d1f3e8}
+.public-city-values{font-size:15px;line-height:1.65;color:#aee7d9}
+.public-warning-link{display:inline-block;color:#95efdb;margin-top:17px;font-size:15px;text-decoration:underline;text-underline-offset:3px}
+.weather-more{border:1px solid #355a65;border-radius:12px;margin:0 0 17px;padding:0 13px}
+.weather-more summary{cursor:pointer;min-height:56px;padding:16px 8px;font-size:17px;font-weight:700;color:#a4f0db}
+.weather-more .weather-intel,.weather-more .public-advisory{margin-top:9px}
+.weather-banner h2{font-size:clamp(21px,2.5vw,28px)}
+.weather-banner p{font-size:16px}
+.easy-refresh-copy strong{font-size:16px}
+.easy-refresh-copy span{font-size:13px}
+@media(max-width:980px){.public-weather-cities{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:740px){.public-overview{padding:16px}.public-overview-top{display:block}.public-overview h2{font-size:28px}.public-overview p{font-size:17px}.public-overview button{width:100%;margin-top:13px}.public-weather-cities{grid-template-columns:1fr;gap:9px}.public-city{padding:13px}.public-city strong{font-size:21px}.public-city-condition{font-size:17px}.public-city-values{font-size:15px}.weather-banner h2{font-size:21px}.weather-banner p{font-size:15px}.easy-refresh-copy span{font-size:13px}}
+
+/* v1.10.1: Favorite places are part of the main weather summary, not a separate task. */
+.weather-banner{flex-wrap:wrap}
+.weather-shortcuts{flex:0 0 100%;border-top:1px solid #417169;padding-top:15px;margin-top:4px}
+.weather-shortcuts-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.weather-shortcuts-heading strong{font-size:17px;color:#e8fff7}
+.weather-shortcuts-heading strong span{font-size:13px;color:#a3cbca}
+.weather-shortcuts-heading button{min-height:44px;padding:9px 13px;background:transparent;border:1px solid #559582;color:#d3f6e8;border-radius:8px;font-size:13px;font-weight:700}
+.weather-shortcuts-disclosure{font-size:12px;line-height:1.65;color:#bad8d5;margin:9px 0!important}
+.places-shortcut-list{display:flex;flex-wrap:wrap;gap:9px;margin:9px 0 0}
+.places-shortcut-list .place-item{padding:8px 9px;gap:12px;border-color:#49887d;background:#153d42}
+.places-shortcut-list .place-item span{font-size:15px;min-width:0;color:#f0fff8;font-weight:700}
+.places-shortcut-list .place-item button{min-height:44px;font-size:14px;font-weight:700;padding:9px 14px}
+.places-manage summary{padding:7px 0;cursor:pointer;font-size:15px;color:#c8f3e7;font-weight:700}
+.places-manage-list{display:grid;gap:8px;margin:13px 0}
+.places-manage-list .place-item{min-height:46px}
+@media(max-width:740px){.places-shortcut-list{display:grid;grid-template-columns:1fr}.places-shortcut-list .place-item{justify-content:space-between}.weather-shortcuts-heading button{width:100%}.weather-shortcuts-disclosure{font-size:13px!important}.places-shortcut-list .place-item span{font-size:17px}.places-shortcut-list .place-item button{font-size:15px;min-height:48px}}
+
+/* v1.11: location-first, large-print mobile home. Legacy tools remain in the second view. */
+body:not(.tools-mode) .sidebar{display:none}
+body:not(.tools-mode) .content{width:100%;max-width:1120px;margin-inline:auto}
+body:not(.tools-mode) .topbar .crumb{font-size:12px}
+.main-tabs{position:sticky;top:0;z-index:15;display:flex;gap:8px;padding:8px 0 17px;background:#0b1c2b}
+.main-tabs button{flex:1;min-height:54px;padding:10px 12px;color:#add3d1;background:#152e40;border:1px solid #315c66;border-radius:11px;font-size:15px;font-weight:750}
+.main-tabs button.active{background:#226a58;border-color:#61b6a0;color:#effff8}
+.main-tabs button:focus-visible,.home-hero button:focus-visible,.home-quick button:focus-visible{outline:3px solid #bef9e2;outline-offset:3px}
+.home-hero{border:1px solid #44797d;border-radius:22px;background:linear-gradient(160deg,#193c58 0%,#172d4d 60%,#1b2b45 100%);padding:27px;color:#f0f9ff;margin:0 0 16px}
+.home-top{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#9ddbcf;letter-spacing:.8px;font-size:13px;font-weight:800}
+.home-hero .home-change{min-height:45px;padding:8px 14px;background:#1d514a;border:1px solid #4b9989;border-radius:10px;color:#e6fff7;font-size:14px}
+.home-hero h1{font-size:clamp(27px,4vw,40px);margin:17px 0 8px;line-height:1.3}
+.home-current{display:flex;align-items:center;gap:27px;margin:12px 0 18px}
+.home-weather-icon{font-size:clamp(66px,10vw,105px);min-width:110px;text-align:center;line-height:1.2}
+.home-temperature{font-size:clamp(78px,12vw,142px);font-weight:700;line-height:1.05;letter-spacing:-5px}
+.home-condition{font-size:clamp(20px,3vw,30px);font-weight:750;line-height:1.45}
+.home-feels{color:#c0d4ec;font-size:18px;margin-top:6px}
+.home-rain{font-size:20px;font-weight:700;color:#aef3df;margin:16px 0}
+.home-meta{font-size:13px;line-height:1.7;color:#afc4d4}
+.home-consent{margin-top:20px;border:1px solid #49727c;background:#102f42;border-radius:14px;padding:18px}
+.home-consent p{font-size:15px;line-height:1.8;color:#d1e5e3;margin:0 0 12px}
+.home-consent button,.home-actions button{width:100%;min-height:58px;padding:13px 16px;background:#22745b;border:1px solid #5db69a;color:#f0fff7;font-size:18px;font-weight:750;border-radius:10px}
+.home-consent #home-location-status{margin:9px 0 0;color:#a6d5d3;font-size:14px}
+.home-actions{display:grid;gap:12px;margin-top:20px}
+.home-auto{display:flex;align-items:center;gap:11px;font-size:15px;color:#d0e5e4;line-height:1.5}
+.home-auto input{width:23px;height:23px;accent-color:#69d6b5;flex-shrink:0}
+.home-forecast{border:1px solid #335e70;background:#11273d;border-radius:17px;padding:18px;margin-bottom:15px}
+.home-forecast h2{font-size:23px;margin:8px 0 13px}
+.home-hours{display:flex;gap:9px;overflow-x:auto;padding-bottom:9px;scrollbar-width:thin}
+.home-hour{display:flex;flex-direction:column;gap:8px;min-width:133px;border:1px solid #406279;border-radius:11px;padding:13px;background:#172e44;font-size:15px}
+.home-hour strong{color:#e3fff5;font-size:18px}.home-hour span{font-weight:650;color:#c1f2e4}.home-hour small{color:#a4c2d2;font-size:13px}
+.home-days{display:grid;gap:6px}
+.home-day{display:grid;grid-template-columns:70px minmax(0,1fr) 92px 85px;align-items:center;gap:10px;min-height:57px;border-bottom:1px solid #355266;font-size:15px}
+.home-day strong{font-size:17px}.home-day span{color:#d0e5e5}
+.home-quick{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:14px}
+.home-quick button{min-height:57px;padding:10px;border-radius:11px;background:#19443f;border:1px solid #469b81;color:#e4fff5;font-size:17px;font-weight:750}
+.home-national{border:1px solid #365b69;border-radius:11px;padding:12px;margin:0 0 17px}
+.home-national summary{min-height:40px;cursor:pointer;font-size:15px;font-weight:700;color:#9bdfcf;padding:9px}
+.home-national .public-overview{margin-top:10px}
+@media(max-width:740px){
+ body:not(.tools-mode) .sidebar{display:none}
+ .main-tabs{gap:5px;padding:5px 0 11px}.main-tabs button{min-height:52px;padding:7px 4px;font-size:14px}
+ .home-hero{padding:17px;border-radius:16px}
+ .home-top{font-size:11px;letter-spacing:0}.home-hero .home-change{font-size:12px;padding:8px;white-space:nowrap}
+ .home-hero h1{font-size:27px;margin:15px 0}
+ .home-current{gap:12px}.home-weather-icon{min-width:68px;font-size:62px}
+ .home-temperature{font-size:clamp(68px,17vw,108px);letter-spacing:-3px}
+ .home-condition{font-size:21px}.home-feels{font-size:16px}
+ .home-rain{font-size:18px;line-height:1.5}
+ .home-consent{padding:12px}.home-consent p{font-size:14px}
+ .home-day{grid-template-columns:48px minmax(0,1fr) 64px 63px;gap:5px;font-size:12px}.home-day strong{font-size:14px}
+ .home-quick button{font-size:15px;min-height:59px}
+ .home-forecast h2{font-size:20px}
+}
+
+/* Rainfall Outlook v1.12 — forecasts are not warnings. */
+.rain-outlook{margin:0 0 16px;padding:19px;border:1px solid #417b83;border-radius:16px;background:linear-gradient(130deg,#10363e,#142b42);color:#dff7f0}
+.outlook-heading>span{font-size:11px;font-weight:800;letter-spacing:1px;color:#8ce5d1}
+.outlook-heading h2{font-size:clamp(22px,3vw,29px);margin:7px 0;color:#eefff7}
+.outlook-heading p,.rain-outlook>p{font-size:13px;line-height:1.7;color:#b0d1d2}
+.rain-outlook #outlook-status{font-size:15px;color:#b5eedb;font-weight:650;margin:14px 0}
+.rain-outlook button{min-height:49px;padding:11px 15px;border-radius:9px;border:1px solid #58aa92;color:#ebfff4;background:#235e51;font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.rain-outlook button:disabled{cursor:not-allowed;opacity:.55}
+.rain-outlook .outlook-disclosure{color:#9fc8c9;font-size:12px}
+.outlook-models{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:12px}
+.outlook-card{background:#102b3d;border:1px solid #386174;border-radius:10px;padding:13px;display:flex;flex-direction:column;gap:9px;font-size:14px;color:#c7e7e1}
+.outlook-name{font-weight:800;color:#92e8d2;font-size:15px}
+.outlook-summary{font-size:15px!important;color:#e2f8ea!important;font-weight:700}
+.outlook-compare{display:grid;gap:4px;margin:11px 0}
+.outlook-compare-row{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:9px;padding:10px;border:1px solid #365a6a;border-radius:7px;font-size:12px}
+.outlook-compare-row span:last-child{color:#95e5d5;font-weight:700}
+.outlook-ensemble-result{padding:12px;border-radius:9px;background:#1b4551;color:#e1fff4!important}
+.outlook-caution{border-top:1px solid #456473;margin-top:17px;padding-top:13px}
+.outlook-caution strong{color:#ffe2a4;font-size:15px}
+.outlook-caution p{font-size:12px;line-height:1.75;color:#b7d1d0}
+.outlook-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.outlook-links a{color:#a4efd8;font-size:14px;text-decoration:underline;text-underline-offset:3px}
+.rain-outlook [hidden]{display:none!important}
+@media(max-width:780px){.outlook-models{grid-template-columns:1fr}.outlook-compare-row{grid-template-columns:1.25fr repeat(3,1fr);gap:4px;font-size:11px}.rain-outlook{padding:13px}.rain-outlook button{width:100%;margin:4px 0}.outlook-card{gap:6px}}
+
+/* v1.12.1 current GPS locality, optional independent consent. */
+.home-locality{margin:12px 0 5px;padding:12px 14px;border:1px solid #416977;border-radius:10px;background:#132e46}
+.home-locality .home-place-detail{font-size:16px;line-height:1.5;color:#c8f4e8;font-weight:650}
+.home-locality button{min-height:43px;padding:9px 11px;margin:6px 7px 4px 0;border:1px solid #519b87;border-radius:8px;background:#215849;color:#e8fff5;font-size:13px;font-weight:700;cursor:pointer}
+.home-locality #home-place-revoke{background:transparent;color:#bfded7}
+.home-locality #home-place-status{font-size:12px;line-height:1.6;color:#add3ce}
+.home-locality small{display:block;color:#98b8c4;font-size:11px;line-height:1.6}
+.home-locality a{color:#96e6d4}
+@media(max-width:740px){.home-locality button{width:100%;min-height:49px;font-size:14px}.home-locality .home-place-detail{font-size:15px}}
+
+/* Large-print public rainfall explanation before optional technical data. */
+.outlook-public{padding:17px;margin:15px 0;border:1px solid #4a9e88;border-radius:12px;background:linear-gradient(125deg,#184a4c,#173a4a)}
+.outlook-public-kicker{font-size:12px;color:#9af0d7;font-weight:800;letter-spacing:.5px}
+.outlook-public h3{font-size:clamp(22px,3vw,29px);color:#edfff7;margin:11px 0}
+.outlook-public p{font-size:16px;line-height:1.7;color:#d8f1ea;margin:11px 0}
+.outlook-public small{display:block;color:#accccd;font-size:12px;line-height:1.6}
+.outlook-public-periods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.outlook-period{border:1px solid #48777c;border-radius:9px;background:#123348;padding:13px;display:flex;flex-direction:column;gap:8px}
+.outlook-period-label{font-size:15px;color:#bde9da}.outlook-period-value{font-size:19px;font-weight:800;color:#f2fff9}
+.outlook-technical{border:1px solid #42636d;border-radius:10px;padding:10px 13px;margin:13px 0}
+.outlook-technical summary{cursor:pointer;min-height:42px;padding:9px 0;font-size:15px;font-weight:700;color:#a9e9d7}
+.outlook-public[hidden]{display:none!important}
+@media(max-width:740px){.outlook-public{padding:12px}.outlook-public p{font-size:15px}.outlook-public-periods{grid-template-columns:1fr}.outlook-period{padding:10px;gap:4px}.outlook-period-value{font-size:19px}}
+
+/* v1.13 Radar Explorer: regional station catalogue. Only published snapshots get a local viewer button. */
+.sidebar-section.radar-explorer{min-height:0;display:flex;flex-direction:column;flex:1}
+.radar-search-label{font-size:12px;font-weight:750;color:#d0ede7;margin:3px 9px 7px}
+#radar-station-search{width:100%;min-height:46px;border-radius:9px;border:1px solid #417281;background:#122b3d;color:#f1fff9;font:inherit;font-size:14px;padding:10px 12px}
+#radar-search-status{font-size:11px;color:#9bbebd;line-height:1.6;margin:8px}
+.radar-explorer .station-nav{display:block;overflow-y:auto;overflow-x:hidden;min-height:0;padding:3px 3px 12px;scrollbar-width:thin}
+.radar-directory-region{border-top:1px solid #244457;padding:6px 0}
+.radar-directory-region summary{cursor:pointer;min-height:42px;padding:10px 7px;color:#a6ebd7;font-size:12px;font-weight:800;line-height:1.4}
+.radar-directory-region-items{display:grid;gap:4px;margin:5px 0 9px}
+.radar-directory-item{min-height:50px;padding:8px 7px;white-space:normal}
+.radar-directory-item>span:nth-child(2){font-size:13px;overflow-wrap:anywhere}
+.radar-directory-item small{font-size:10px;line-height:1.4}
+.radar-directory-item[data-radar-kind="external"] .station-icon{color:#bdd6df}
+.radar-directory-item[data-snapshot-state="published"] .nav-indicator{display:block;background:#69e1bf}
+.radar-directory-item[data-snapshot-state="unavailable"] .nav-indicator,.radar-directory-item[data-snapshot-state="stale"] .nav-indicator{display:block;background:#d99a84}
+.radar-directory-help{font-size:10px;line-height:1.6;color:#88aab7;padding:8px;margin:0}
+@media(max-width:740px){
+ body.tools-mode .sidebar{padding:13px}
+ body.tools-mode .sidebar-section.radar-explorer{max-height:390px}
+ .radar-explorer .station-nav{display:block;overflow-y:auto;overflow-x:hidden;max-height:285px}
+ .radar-directory-region-items{display:grid}
+ .radar-explorer .station-link{width:100%;min-height:48px;white-space:normal;padding:9px}
+ .radar-explorer .station-link>span:nth-child(2){font-size:13px}
+ .radar-explorer .station-link small,.radar-explorer .station-link .nav-indicator{display:block!important}
+ .radar-search-label{display:block}
+}
+
+/* v1.14 real raster zoom: image grows in scrollable viewport; buttons remain above it. */
+.radar-canvas .image-layer{position:absolute;inset:0;overflow:auto;display:block;overscroll-behavior:contain;scrollbar-width:thin;z-index:2}
+.radar-canvas .image-layer img{display:block;max-width:none!important;min-width:0!important;width:100%;height:auto;object-fit:contain;transform:none!important;transform-origin:top left;margin:0}
+.radar-canvas .canvas-chip,.radar-canvas .canvas-coordinate{z-index:4}
+.radar-canvas .zoom-tools{z-index:5;pointer-events:auto}
+.radar-canvas .zoom-tools button{pointer-events:auto;min-height:38px;min-width:38px;font-size:22px}
+.radar-canvas .zoom-tools button:disabled{opacity:.4}
+.region-radar-picker{display:flex;gap:8px;flex-wrap:wrap;padding:12px 16px;background:#10283b;border-top:1px solid #2c5260}
+.region-radar-picker button{border:1px solid #447a79;color:#d1f8e8;background:#1b4548;min-height:45px;padding:8px 13px;border-radius:9px;font-size:14px;font-weight:750}
+.region-radar-picker button[aria-pressed="true"]{background:#267963;border-color:#76d4ba;color:white}
+.region-radar-picker p{width:100%;margin:0;font-size:11px;line-height:1.6;color:#accbd0}
+@media(max-width:740px){.region-radar-picker{gap:6px}.region-radar-picker button{flex:1 1 30%;padding:8px 5px;font-size:13px}.radar-canvas .zoom-tools button{min-width:44px;min-height:44px}.radar-canvas .zoom-tools span{font-size:13px}}
+
+.outlook-rain-pattern{background:#184e50;border:1px solid #519e8c;border-radius:9px;padding:13px;font-size:17px!important;font-weight:750;color:#e6fff3!important}
+.outlook-rain-chance{font-size:15px!important;line-height:1.65;color:#a9e9db!important}
+
+/* v1.15 Easy Install / Add to Home Screen */
+.top-install{min-height:40px;padding:8px 13px;border:1px solid #438477;border-radius:9px;background:#16493f;color:#e8fff7;font:inherit;font-size:12px;font-weight:800;white-space:nowrap}
+.top-install:hover{background:#1d6656}.top-install:disabled{opacity:.65}
+.install-guide{width:min(560px,calc(100vw - 28px));max-height:min(720px,calc(100vh - 28px));padding:0;border:1px solid #47766f;border-radius:16px;background:#102a3a;color:#effff9;box-shadow:0 28px 90px rgba(0,0,0,.45)}
+.install-guide::backdrop{background:rgba(3,12,21,.76);backdrop-filter:blur(3px)}
+.install-guide-card{position:relative;padding:25px}
+.install-guide-close{position:absolute;right:14px;top:12px;width:42px;height:42px;border-radius:50%;border:1px solid #486c75;background:#183649;color:#e9fff7;font-size:25px;line-height:1}
+.install-kicker{display:block;padding-right:46px;color:#87e3ce;font-size:11px;letter-spacing:1px;font-weight:800}
+.install-guide h2{margin:9px 48px 16px 0;font-size:26px;line-height:1.3}
+.install-guide-body{display:grid;gap:10px}
+.install-guide-lead{margin:0 0 3px;color:#c5dfdf;font-size:15px;line-height:1.7}
+.install-step{display:flex;align-items:flex-start;gap:12px;padding:12px;border:1px solid #34596a;border-radius:11px;background:#122f42}
+.install-step-number{display:grid;place-items:center;flex:0 0 32px;width:32px;height:32px;border-radius:50%;background:#27745f;color:white;font-weight:800}
+.install-step div{display:flex;flex-direction:column;gap:4px}.install-step strong{font-size:15px}.install-step span{color:#a9c8ce;font-size:12px;line-height:1.55}
+.install-hint{margin:15px 0 0;color:#9ddfce;font-size:12px;line-height:1.65}
+@media(max-width:740px){
+ .topbar .header-right{gap:6px}.top-install{min-height:38px;padding:7px 9px;font-size:10px}
+ .timezone-chip{white-space:nowrap}.install-guide-card{padding:20px 15px}
+ .install-guide h2{font-size:22px}.install-step{padding:10px}.install-step strong{font-size:14px}
+}
+@media(max-width:430px){
+ .topbar .crumb{display:none}.topbar{justify-content:flex-end}
+ .top-install{font-size:11px}.install-guide{width:calc(100vw - 18px)}
+}
